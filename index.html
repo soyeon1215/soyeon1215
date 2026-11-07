@@ -1,0 +1,1866 @@
+<!doctype html>
+<html lang="ko" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>별이엄마의 로컬 마인드풀니스 & 커뮤니케이션 아키텍트</title>
+    <meta name="description" content="지역민과 청년을 위한 마음 치유와 따뜻한 대화의 연결 공간, 별이엄마의 로컬 마인드풀니스 & 커뮤니케이션 쉼표 살롱 공식 랜딩페이지" />
+    <meta property="og:title" content="별이엄마의 로컬 마인드풀니스 & 커뮤니케이션 아키텍트" />
+    <meta property="og:description" content="지역민과 청년을 위한 마음 치유와 따뜻한 대화의 연결 공간, 별이엄마의 로컬 마인드풀니스 & 커뮤니케이션 쉼표 살롱 공식 랜딩페이지" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Pretendard Web Font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              forest: '#2D6A4F',
+              forestDark: '#1B4332',
+              sage: '#52B788',
+              sageLight: '#D8F3DC',
+              warmSand: '#E9D8A6',
+              cream: '#F4F1DE',
+              neutralBg: '#F8F9FA',
+              textMain: '#1A2E26',
+            },
+            fontFamily: {
+              sans: ['Pretendard Variable', 'Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      body {
+        font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+        background-color: #F8F9FA;
+        color: #1A2E26;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f3;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 9999px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(6px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-slideUp {
+        animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      @keyframes slideUp {
+        from { transform: translateY(100%); }
+        to { transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body class="bg-[#F8F9FA] text-[#1A2E26] font-sans antialiased selection:bg-[#52B788]/20 selection:text-[#1B4332]">
+
+    <!-- ==================== 1. TOP UTILITY SUB-BAR ==================== -->
+    <div class="bg-[#2D6A4F] text-[#F4F1DE] text-xs py-1.5 px-4 sm:px-8 border-b border-[#1B4332]/20">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-3 overflow-x-auto text-[11px] sm:text-xs">
+          <span class="font-semibold text-white bg-[#1B4332] px-2.5 py-0.5 rounded-full whitespace-nowrap">
+            쉼표 살롱 본점
+          </span>
+          <span class="hidden sm:inline text-stone-300">|</span>
+          <span class="text-stone-200 hover:text-white cursor-pointer transition-colors whitespace-nowrap hidden sm:inline">
+            마인드풀니스 스튜디오
+          </span>
+          <span class="hidden sm:inline text-stone-300">|</span>
+          <span class="text-stone-200 hover:text-white cursor-pointer transition-colors whitespace-nowrap hidden md:inline">
+            청년 대화 아지트
+          </span>
+          <span class="hidden md:inline text-stone-300">|</span>
+          <span class="text-emerald-200 font-medium whitespace-nowrap flex items-center gap-1">
+            <svg class="w-3 h-3 inline" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            서울 마포구 연남·망원 골목 (성미산로 128)
+          </span>
+        </div>
+        <div class="flex items-center gap-3 text-xs text-stone-200 shrink-0">
+          <button onclick="alert('회원 서비스: 웰컴 세션 신청 시 자동으로 쉼표 살롱 멤버십 혜택이 적용됩니다.')" class="hover:text-white transition-colors cursor-pointer">
+            로그인
+          </button>
+          <span>·</span>
+          <button onclick="openBookingModal('welcome-trial')" class="text-[#E9D8A6] font-semibold hover:underline cursor-pointer">
+            멤버십 등록
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 2. MAIN HEADER (TOP BAR CONTRACT) ==================== -->
+    <header class="sticky top-0 z-40 bg-[#F8F9FA]/95 backdrop-blur-md border-b border-stone-200/80 transition-all">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex items-center justify-between gap-8">
+        <!-- Zone 1: Single text element wordmark with brand motif -->
+        <a href="#" class="flex items-center gap-2 text-xl font-bold tracking-tight text-[#1B4332] whitespace-nowrap shrink-0 group">
+          <span class="w-8 h-8 rounded-xl bg-[#2D6A4F] text-[#F4F1DE] flex items-center justify-center font-serif text-lg font-bold shadow-sm group-hover:bg-[#1B4332] transition-colors">
+            ,
+          </span>
+          <span class="flex flex-col text-left leading-tight">
+            <span class="text-lg font-bold text-[#1B4332] group-hover:text-[#2D6A4F] transition-colors">
+              별이엄마의 쉼표 살롱
+            </span>
+            <span class="text-[11px] font-normal text-stone-500 tracking-normal">
+              로컬 마인드풀니스 & 커뮤니케이션 아키텍트
+            </span>
+          </span>
+        </a>
+
+        <!-- Zone 2: Concise single-line nav links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-stone-700">
+          <a href="#architect" class="hover:text-[#2D6A4F] transition-colors whitespace-nowrap shrink-0">아키텍트 철학</a>
+          <a href="#programs" class="hover:text-[#2D6A4F] transition-colors whitespace-nowrap shrink-0">마인드풀니스 프로그램</a>
+          <a href="#why" class="hover:text-[#2D6A4F] transition-colors whitespace-nowrap shrink-0">왜 쉼표살롱인가</a>
+          <a href="#quiz" class="hover:text-[#2D6A4F] transition-colors whitespace-nowrap shrink-0 flex items-center gap-1 text-[#2D6A4F] font-semibold">
+            <svg class="w-3.5 h-3.5 text-[#52B788]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L14.39 9.61L22 12L14.39 14.39L12 22L9.61 14.39L2 12L9.61 9.61L12 2Z"/></svg>
+            마음 진단 테스트
+          </a>
+          <a href="#reviews" class="hover:text-[#2D6A4F] transition-colors whitespace-nowrap shrink-0">이웃 생생 후기</a>
+          <a href="#spaces" class="hover:text-[#2D6A4F] transition-colors whitespace-nowrap shrink-0">공간 안내</a>
+        </nav>
+
+        <!-- Zone 3: 1 primary action -->
+        <div class="flex items-center gap-3 shrink-0">
+          <button onclick="openBookingModal('welcome-trial')" class="px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-semibold text-white bg-[#2D6A4F] hover:bg-[#1B4332] active:scale-98 rounded-full shadow-sm hover:shadow transition-all whitespace-nowrap shrink-0 flex items-center gap-1.5 cursor-pointer">
+            <span>웰컴 세션 신청</span>
+            <span class="text-emerald-200">➔</span>
+          </button>
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="lg:hidden p-2 text-stone-700 hover:text-[#2D6A4F] rounded-lg focus:outline-none" aria-label="메뉴 토글">
+            <svg id="menuIconOpen" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg id="menuIconClose" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-stone-200 px-6 py-5 shadow-lg space-y-4">
+        <div class="flex flex-col space-y-3 text-sm font-medium text-stone-700">
+          <a href="#architect" onclick="toggleMobileMenu()" class="py-1 hover:text-[#2D6A4F]">아키텍트 철학</a>
+          <a href="#programs" onclick="toggleMobileMenu()" class="py-1 hover:text-[#2D6A4F]">마인드풀니스 프로그램</a>
+          <a href="#why" onclick="toggleMobileMenu()" class="py-1 hover:text-[#2D6A4F]">왜 쉼표살롱인가</a>
+          <a href="#quiz" onclick="toggleMobileMenu()" class="py-1 text-[#2D6A4F] font-semibold">마음 자가진단 (30초 테스트)</a>
+          <a href="#reviews" onclick="toggleMobileMenu()" class="py-1 hover:text-[#2D6A4F]">이웃 생생 후기</a>
+          <a href="#spaces" onclick="toggleMobileMenu()" class="py-1 hover:text-[#2D6A4F]">살롱 공간 둘러보기</a>
+        </div>
+        <div class="pt-3 border-t border-stone-100 flex flex-col gap-2">
+          <button onclick="toggleMobileMenu(); openBookingModal('welcome-trial');" class="w-full py-3 text-center text-sm font-semibold text-white bg-[#2D6A4F] rounded-xl">
+            첫 방문 무료 웰컴 세션 신청하기
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================== 3. HERO SECTION ==================== -->
+    <section class="pt-5 pb-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#2D6A4F] via-[#1B4332] to-[#2D6A4F] text-white shadow-xl">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-[#52B788]/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-[#E9D8A6]/15 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 relative z-10">
+          <!-- Left Column: Copy & Interactive Slide Preview -->
+          <div class="lg:col-span-8 p-6 sm:p-10 lg:p-12 flex flex-col justify-between">
+            <div>
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-[#E9D8A6] text-xs font-medium mb-5">
+                <svg class="w-3.5 h-3.5 text-[#E9D8A6]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L14.39 9.61L22 12L14.39 14.39L12 22L9.61 14.39L2 12L9.61 9.61L12 2Z"/></svg>
+                <span>로컬 마인드풀니스 & 커뮤니케이션 아키텍트</span>
+                <span class="text-white/60">|</span>
+                <span class="text-white">별이엄마의 쉼표 살롱</span>
+              </div>
+
+              <h1 class="text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-white leading-[1.25] mb-4">
+                마음이 지친 날, 동네에서<br />
+                <span class="text-[#E9D8A6] underline decoration-[#52B788] underline-offset-8">
+                  만나는 따뜻한 쉼표
+                </span>
+                를 선물하세요
+              </h1>
+
+              <p class="text-sm sm:text-base text-stone-200 max-w-2xl leading-relaxed mb-7 font-light">
+                혼자 삭이지 않아도 괜찮습니다. 전문 아키텍트 별이엄마의 체계적인 마인드풀니스 설계와 따뜻한 차 한 잔으로, 지역민과 청년이 슬리퍼를 신고 편안히 찾는 일상 속 안식처입니다.
+              </p>
+
+              <div class="flex flex-wrap items-center gap-3.5 mb-8">
+                <button onclick="openBookingModal('welcome-trial')" class="px-6 py-3.5 text-sm sm:text-base font-bold text-[#1B4332] bg-[#E9D8A6] hover:bg-[#F4F1DE] active:scale-98 rounded-full shadow-lg hover:shadow-xl transition-all flex items-center gap-2 group cursor-pointer">
+                  <span>첫 방문 웰컴 세션 예약하기</span>
+                  <span class="group-hover:translate-x-1 transition-transform">➔</span>
+                </button>
+                <a href="#programs" class="px-5 py-3.5 text-sm sm:text-base font-semibold text-white bg-white/10 hover:bg-white/20 active:scale-98 border border-white/25 rounded-full transition-all">
+                  프로그램 둘러보기
+                </a>
+              </div>
+            </div>
+
+            <!-- Bottom Slide Mini-Card (Sample Benchmark: interactive slide control) -->
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 sm:p-5 mt-4">
+              <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-2 text-xs font-medium text-[#E9D8A6]">
+                  <span id="heroSlideTag" class="bg-[#52B788] text-white px-2 py-0.5 rounded text-[11px] font-bold">
+                    대화 & 경청
+                  </span>
+                  <span id="heroSlideNum" class="text-stone-300 font-mono text-[11px]">
+                    1 / 3
+                  </span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="flex gap-1.5" id="heroDotsContainer">
+                    <button onclick="setHeroSlide(0)" class="h-1.5 rounded-full transition-all w-6 bg-[#E9D8A6]"></button>
+                    <button onclick="setHeroSlide(1)" class="h-1.5 rounded-full transition-all w-2 bg-white/40"></button>
+                    <button onclick="setHeroSlide(2)" class="h-1.5 rounded-full transition-all w-2 bg-white/40"></button>
+                  </div>
+                  <button id="heroPlayPauseBtn" onclick="toggleHeroPlay()" class="p-1 rounded-full bg-white/10 text-white hover:bg-white/20 text-xs ml-1" title="슬라이드 일시정지">
+                    ⏸
+                  </button>
+                </div>
+              </div>
+
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div>
+                  <h4 id="heroSlideTitle" class="text-base sm:text-lg font-bold text-white tracking-tight">
+                    상처받지 않는 공감 대화 살롱
+                  </h4>
+                  <p id="heroSlideSubtitle" class="text-xs sm:text-sm text-stone-300 line-clamp-1">
+                    가족, 직장, 친구 관계의 피로를 덜어내는 비폭력 대화(NVC) 실습
+                  </p>
+                </div>
+                <button id="heroSlideCta" onclick="openProgramModal('dialogue-salon')" class="self-start sm:self-auto px-3.5 py-1.5 text-xs font-semibold bg-white text-[#1B4332] rounded-lg hover:bg-stone-100 transition-colors whitespace-nowrap shrink-0 flex items-center gap-1 shadow-sm">
+                  <span>세션 자세히 보기</span>
+                  <span>➔</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Community Visual Photo + Side Vertical Cards -->
+          <div class="lg:col-span-4 bg-[#235841]/80 p-5 sm:p-6 lg:p-8 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-white/15">
+            <div class="relative rounded-2xl overflow-hidden shadow-lg border border-white/25 mb-5 aspect-[4/3] group">
+              <img src="/images/mindfulness_community_gathering_1794011261878.jpg" onerror="this.src='/src/assets/images/mindfulness_community_gathering_1794011261878.jpg'" alt="별이엄마와 함께하는 온기 가득한 로컬 커뮤니티 살롱" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-4">
+                <span class="text-[11px] font-semibold text-[#E9D8A6] tracking-wider uppercase">ARCHITECT & COMMUNITY</span>
+                <p class="text-sm font-bold text-white">별이엄마 아키텍트와 이웃 청년들의 따뜻한 교류</p>
+              </div>
+            </div>
+
+            <!-- Vertical Side Cards (Benchmark from sample's side column cards) -->
+            <div class="space-y-3">
+              <div onclick="document.getElementById('quiz').scrollIntoView({behavior: 'smooth'})" class="bg-white/15 hover:bg-white/20 active:scale-98 transition-all p-3.5 rounded-2xl border border-white/25 cursor-pointer group">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-8 h-8 rounded-xl bg-[#52B788] text-white flex items-center justify-center font-bold">
+                      ✨
+                    </div>
+                    <div>
+                      <span class="text-[11px] text-[#E9D8A6] font-semibold block">30초 퀵 테스트</span>
+                      <h4 class="text-sm font-bold text-white leading-tight">나의 오늘 마음 날씨는?</h4>
+                    </div>
+                  </div>
+                  <span class="text-xs text-stone-300 group-hover:text-white group-hover:translate-x-1 transition-all">진단하기 &gt;</span>
+                </div>
+              </div>
+
+              <div onclick="openBookingModal('youth-dining')" class="bg-[#E9D8A6] text-[#1B4332] hover:bg-[#F4F1DE] active:scale-98 transition-all p-3.5 rounded-2xl shadow-sm cursor-pointer group">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-8 h-8 rounded-xl bg-[#2D6A4F] text-[#F4F1DE] flex items-center justify-center font-bold">
+                      🍵
+                    </div>
+                    <div>
+                      <span class="text-[11px] text-[#2D6A4F] font-bold block">이번 주 살롱 일정</span>
+                      <h4 class="text-sm font-bold text-[#1B4332] leading-tight">금요 소셜 솥밥 다이닝 잔여 2석</h4>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-[#2D6A4F] group-hover:translate-x-1 transition-all">신청 &gt;</span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 pt-2 text-center">
+                <div class="bg-white/10 rounded-xl py-2 px-3 border border-white/10">
+                  <span class="text-xs text-stone-300 block">누적 참여 이웃</span>
+                  <span class="text-base font-bold text-white tabular-nums">1,280+명</span>
+                </div>
+                <div class="bg-white/10 rounded-xl py-2 px-3 border border-white/10">
+                  <span class="text-xs text-stone-300 block">세션 만족도</span>
+                  <span class="text-base font-bold text-[#E9D8A6] tabular-nums">99.4%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benchmark Ticker Ribbon Below Hero Bar -->
+      <div class="mt-4 py-3 px-5 rounded-2xl bg-[#F4F1DE] border border-[#E9D8A6] flex flex-col sm:flex-row items-center justify-between gap-3 text-stone-700 text-xs sm:text-sm">
+        <div class="flex items-center gap-2 font-medium">
+          <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#2D6A4F] text-[#F4F1DE] font-bold text-xs">
+            쉼
+          </span>
+          <span class="text-[#1B4332] font-bold">마음의 온도를 1도 올리는 일상의 쉼표:</span>
+          <span class="text-stone-600 hidden md:inline">지역민과 청년의 심리적 고립 해소와 따뜻한 대화 연결</span>
+        </div>
+        <div class="flex items-center gap-3 text-xs text-[#2D6A4F] font-semibold">
+          <span class="flex items-center gap-1">🌿 비폭력 대화</span>
+          <span>·</span>
+          <span class="flex items-center gap-1">🍵 로컬 티 명상</span>
+          <span>·</span>
+          <span class="flex items-center gap-1">🥣 청년 식탁</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. PROGRAMS SECTION ==================== -->
+    <section id="programs" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-semibold text-[#2D6A4F] uppercase tracking-wider mb-2">
+            <span class="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800">🌱</span>
+            <span>마음과 관계를 돌보는 맞춤형 설계</span>
+          </div>
+          <h2 class="flex items-center gap-2 text-2xl sm:text-3xl lg:text-4xl font-bold text-[#000609] tracking-tight">
+            <span class="shrink-0">🌱</span>
+            <span>
+              나에게 필요한 쉼과 대화만 골라 누리는<br class="hidden sm:inline" />
+              <span class="text-[#2D6A4F]">생활 밀착형 마인드풀니스 살롱</span>
+            </span>
+          </h2>
+        </div>
+        <div class="flex items-center gap-2 shrink-0">
+          <button onclick="openBookingModal('welcome-trial')" class="px-4 py-2 text-xs sm:text-sm font-semibold text-[#2D6A4F] bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-full transition-colors flex items-center gap-1.5 cursor-pointer">
+            <span>첫 방문 1:1 상담 신청</span>
+            <span>➔</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-2 mb-8" id="progFilterContainer">
+        <button onclick="filterPrograms('all')" id="btnTabAll" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all whitespace-nowrap bg-[#2D6A4F] text-white shadow-sm">
+          전체 프로그램 (3)
+        </button>
+        <button onclick="filterPrograms('dialogue')" id="btnTabDialogue" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all whitespace-nowrap bg-white text-stone-600 hover:bg-stone-100 border border-stone-200">
+          대화 & 공감 살롱
+        </button>
+        <button onclick="filterPrograms('meditation')" id="btnTabMeditation" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all whitespace-nowrap bg-white text-stone-600 hover:bg-stone-100 border border-stone-200">
+          티(Tea) & 오감 명상
+        </button>
+        <button onclick="filterPrograms('social')" id="btnTabSocial" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all whitespace-nowrap bg-white text-stone-600 hover:bg-stone-100 border border-stone-200">
+          청년 소셜 다이닝
+        </button>
+      </div>
+
+      <!-- Program Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8" id="programsGrid">
+        <!-- Card 1: Dialogue Salon -->
+        <div class="program-card bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" data-category="dialogue">
+          <div class="relative aspect-[16/10] overflow-hidden bg-stone-100">
+            <img src="/images/mindfulness_dialogue_session_1794011259814.jpg" onerror="this.src='/src/assets/images/mindfulness_dialogue_session_1794011259814.jpg'" alt="마음챙김 대화 살롱" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute top-3.5 left-3.5">
+              <span class="px-3 py-1 rounded-full text-xs font-bold border backdrop-blur-md bg-emerald-50 text-emerald-800 border-emerald-200">
+                소통 & 공감
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[11px] font-medium px-2.5 py-1 rounded-lg">
+              👥 소그룹 4~6인
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-xl font-bold text-[#1B4332] tracking-tight mb-2 group-hover:text-[#2D6A4F] transition-colors">
+              마음챙김 대화 살롱
+            </h3>
+            <p class="text-xs sm:text-sm text-stone-600 mb-5 leading-relaxed line-clamp-2">
+              상처 주지 않고 상처받지 않는 비폭력 대화(NVC)와 온전한 경청 훈련
+            </p>
+            <div class="space-y-1.5 mb-5 pb-5 border-b border-stone-100 text-xs text-stone-500">
+              <div class="flex items-center gap-2">📅 매주 화/목 저녁 19:30 ~ 21:00</div>
+              <div class="flex items-center gap-2">⏱ 회당 90분 / 4주 코스</div>
+              <div class="flex items-center gap-2">🎯 관계 피로를 느끼는 직장인 및 청년</div>
+            </div>
+            <div class="space-y-2 mb-6 flex-1">
+              <span class="text-[11px] font-bold text-stone-400 uppercase tracking-wider block">세션 핵심 포인트</span>
+              <div class="flex items-start gap-2 text-xs text-stone-700">✓ 내 감정과 욕구를 알아차리는 감정 단어장 워크숍</div>
+              <div class="flex items-start gap-2 text-xs text-stone-700">✓ 비난 없이 솔직하게 마음을 전하는 4단계 표현법</div>
+              <div class="flex items-start gap-2 text-xs text-stone-700">✓ 살롱 전용 대화 프롬프트 카드 30종 제공</div>
+            </div>
+            <div class="bg-[#F8F9FA] rounded-2xl p-3.5 mb-5 border border-stone-100">
+              <div class="flex items-baseline justify-between mb-1">
+                <span class="text-xs font-semibold text-stone-500">참가비 안내</span>
+                <span class="text-sm font-bold text-[#1B4332]">월 4회 120,000원 (웰컴가 89,000원)</span>
+              </div>
+              <div class="text-[11px] text-[#2D6A4F] font-medium">✨ 마포구/인근 지역민 & 청년 20% 추가 바우처 할인</div>
+            </div>
+            <div class="grid grid-cols-2 gap-2 pt-2">
+              <button onclick="openProgramModal('dialogue-salon')" class="w-full py-2.5 px-3 text-xs font-semibold text-stone-700 bg-stone-100 hover:bg-stone-200 rounded-xl transition-colors text-center cursor-pointer">
+                커리큘럼 보기
+              </button>
+              <button onclick="openBookingModal('dialogue-salon')" class="w-full py-2.5 px-3 text-xs font-semibold text-white bg-[#2D6A4F] hover:bg-[#1B4332] rounded-xl transition-colors text-center cursor-pointer">
+                세션 신청 ➔
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Tea Meditation -->
+        <div class="program-card bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" data-category="meditation">
+          <div class="relative aspect-[16/10] overflow-hidden bg-stone-100">
+            <img src="/images/mindfulness_tea_meditation_1794011260644.jpg" onerror="this.src='/src/assets/images/mindfulness_tea_meditation_1794011260644.jpg'" alt="로컬 티 & 오감 명상" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute top-3.5 left-3.5">
+              <span class="px-3 py-1 rounded-full text-xs font-bold border backdrop-blur-md bg-amber-50 text-amber-800 border-amber-200">
+                치유 & 리트릿
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[11px] font-medium px-2.5 py-1 rounded-lg">
+              👥 소그룹 6인 정원
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-xl font-bold text-[#1B4332] tracking-tight mb-2 group-hover:text-[#2D6A4F] transition-colors">
+              로컬 티(Tea) & 오감 명상
+            </h3>
+            <p class="text-xs sm:text-sm text-stone-600 mb-5 leading-relaxed line-clamp-2">
+              정갈한 차 한잔과 향긋한 허브로 오감을 깨우고 뇌 피로를 덜어내는 쉼
+            </p>
+            <div class="space-y-1.5 mb-5 pb-5 border-b border-stone-100 text-xs text-stone-500">
+              <div class="flex items-center gap-2">📅 매주 수 오전 10:30 / 토 오후 14:00</div>
+              <div class="flex items-center gap-2">⏱ 회당 80분 / 1회 체험 또는 정기권</div>
+              <div class="flex items-center gap-2">🎯 번아웃, 불면, 머릿속 복잡한 생각을 비우고 싶은 분</div>
+            </div>
+            <div class="space-y-2 mb-6 flex-1">
+              <span class="text-[11px] font-bold text-stone-400 uppercase tracking-wider block">세션 핵심 포인트</span>
+              <div class="flex items-start gap-2 text-xs text-stone-700">✓ 도자기 다기에 우리는 온수와 차 향기 오감 명상</div>
+              <div class="flex items-start gap-2 text-xs text-stone-700">✓ 신체 긴장을 완화하는 싱잉볼 바디스캔 사운드 배스</div>
+              <div class="flex items-start gap-2 text-xs text-stone-700">✓ 5분 만에 호흡을 고르는 마인드풀 홈 루틴 가이드</div>
+            </div>
+            <div class="bg-[#F8F9FA] rounded-2xl p-3.5 mb-5 border border-stone-100">
+              <div class="flex items-baseline justify-between mb-1">
+                <span class="text-xs font-semibold text-stone-500">참가비 안내</span>
+                <span class="text-sm font-bold text-[#1B4332]">1회 35,000원 (정기 4회권 110,000원)</span>
+              </div>
+              <div class="text-[11px] text-[#2D6A4F] font-medium">✨ 첫 방문 신청자 다도 전용 마인드풀 티백 키트 증정</div>
+            </div>
+            <div class="grid grid-cols-2 gap-2 pt-2">
+              <button onclick="openProgramModal('tea-meditation')" class="w-full py-2.5 px-3 text-xs font-semibold text-stone-700 bg-stone-100 hover:bg-stone-200 rounded-xl transition-colors text-center cursor-pointer">
+                커리큘럼 보기
+              </button>
+              <button onclick="openBookingModal('tea-meditation')" class="w-full py-2.5 px-3 text-xs font-semibold text-white bg-[#2D6A4F] hover:bg-[#1B4332] rounded-xl transition-colors text-center cursor-pointer">
+                세션 신청 ➔
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Youth Social Dining -->
+        <div class="program-card bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" data-category="social">
+          <div class="relative aspect-[16/10] overflow-hidden bg-stone-100">
+            <img src="/images/mindfulness_hero_space_1794011259176.jpg" onerror="this.src='/src/assets/images/mindfulness_hero_space_1794011259176.jpg'" alt="청년 소셜 다이닝" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute top-3.5 left-3.5">
+              <span class="px-3 py-1 rounded-full text-xs font-bold border backdrop-blur-md bg-emerald-50 text-emerald-800 border-emerald-200">
+                연대 & 소셜
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[11px] font-medium px-2.5 py-1 rounded-lg">
+              👥 8인 정원 (청년·이웃)
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-xl font-bold text-[#1B4332] tracking-tight mb-2 group-hover:text-[#2D6A4F] transition-colors">
+              청년 & 1인 가구 소셜 다이닝
+            </h3>
+            <p class="text-xs sm:text-sm text-stone-600 mb-5 leading-relaxed line-clamp-2">
+              따뜻한 솥밥 한 그릇과 함께 외로움을 덜고 이웃의 안부를 묻는 저녁 식탁
+            </p>
+            <div class="space-y-1.5 mb-5 pb-5 border-b border-stone-100 text-xs text-stone-500">
+              <div class="flex items-center gap-2">📅 격주 금요일 저녁 19:00 ~ 21:30</div>
+              <div class="flex items-center gap-2">⏱ 회당 150분 (식사 + 테마 대화)</div>
+              <div class="flex items-center gap-2">🎯 따뜻한 이웃 교류가 그리운 2030 청년</div>
+            </div>
+            <div class="space-y-2 mb-6 flex-1">
+              <span class="text-[11px] font-bold text-stone-400 uppercase tracking-wider block">세션 핵심 포인트</span>
+              <div class="flex items-start gap-2 text-xs text-stone-700">✓ 제철 채소와 유기농 솥밥으로 차린 건강한 식탁</div>
+              <div class="flex items-start gap-2 text-xs text-stone-700">✓ 나이·스펙 묻지 않는 [마인드 닉네임] 안전 규칙</div>
+              <div class="flex items-start gap-2 text-xs text-stone-700">✓ 언제든 들를 수 있는 [동네 아지트 멤버십] 부여</div>
+            </div>
+            <div class="bg-[#F8F9FA] rounded-2xl p-3.5 mb-5 border border-stone-100">
+              <div class="flex items-baseline justify-between mb-1">
+                <span class="text-xs font-semibold text-stone-500">참가비 안내</span>
+                <span class="text-sm font-bold text-[#1B4332]">회당 25,000원 (식재료비 일체 포함)</span>
+              </div>
+              <div class="text-[11px] text-[#2D6A4F] font-medium">✨ 청년 1인 가구 자립 청년 참가비 40% 지원 (청년 바우처)</div>
+            </div>
+            <div class="grid grid-cols-2 gap-2 pt-2">
+              <button onclick="openProgramModal('youth-dining')" class="w-full py-2.5 px-3 text-xs font-semibold text-stone-700 bg-stone-100 hover:bg-stone-200 rounded-xl transition-colors text-center cursor-pointer">
+                커리큘럼 보기
+              </button>
+              <button onclick="openBookingModal('youth-dining')" class="w-full py-2.5 px-3 text-xs font-semibold text-white bg-[#2D6A4F] hover:bg-[#1B4332] rounded-xl transition-colors text-center cursor-pointer">
+                세션 신청 ➔
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. WHY ARCHITECT SECTION ==================== -->
+    <section id="why" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="mb-10 text-center sm:text-left">
+        <div class="inline-flex items-center gap-2 text-xs font-semibold text-[#2D6A4F] uppercase tracking-wider mb-2">
+          <span class="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800">💡</span>
+          <span>창직 모델 탐구 · 로컬 마인드풀니스 & 커뮤니케이션 아키텍트</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1B4332] tracking-tight">
+          왜 <span class="text-[#2D6A4F]">별이엄마의 쉼표 살롱</span>이어야 할까요?
+        </h2>
+        <p class="text-sm text-stone-600 mt-2 max-w-2xl font-light">
+          기존의 딱딱한 심리상담 센터와 단순 친목 모임의 한계를 극복한 새로운 지역 사회적 돌봄 모델입니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <!-- Left: 3 Selectable Benefit Capsules (Sample Benchmark) -->
+        <div class="lg:col-span-6 space-y-4">
+          <!-- Item 1 -->
+          <div onclick="selectWhyTab(0)" id="whyCard0" class="why-card cursor-pointer rounded-2xl transition-all duration-300 p-5 border bg-white border-[#2D6A4F] shadow-md ring-2 ring-[#2D6A4F]/10 scale-[1.01]">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-3">
+                <span id="whyBadge0" class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold bg-[#2D6A4F] text-white">01</span>
+                <h3 class="text-base sm:text-lg font-bold text-[#1B4332]">전문성과 다정함을 겸비한 아키텍트의 섬세한 설계</h3>
+              </div>
+              <span class="text-[11px] font-bold text-[#2D6A4F] bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">전문 자격 & 체계적 설계</span>
+            </div>
+            <p class="text-xs sm:text-sm font-medium text-[#2D6A4F] mb-2 pl-10">단순 친목 모임이 아닌 심리적 안전지대 기반의 커뮤니케이션 코칭</p>
+            <div id="whyContent0" class="pl-10 pt-2 border-t border-stone-100 mt-3 block animate-fadeIn">
+              <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                국가공인 전문상담 자격과 15년 이상의 현장 코칭 경험을 가진 별이엄마 아키텍트가 참여자들의 감정 상태를 세심하게 조율합니다. 비밀 보장과 상호 존중 규칙을 통해 어떤 이야기를 꺼내도 상처받지 않는 완벽한 안전지대를 제공합니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div onclick="selectWhyTab(1)" id="whyCard1" class="why-card cursor-pointer rounded-2xl transition-all duration-300 p-5 border bg-[#F4F1DE]/40 hover:bg-[#F4F1DE]/80 border-stone-200/80">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-3">
+                <span id="whyBadge1" class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold bg-stone-200 text-stone-700">02</span>
+                <h3 class="text-base sm:text-lg font-bold text-stone-800">슬리퍼 신고 언제든 찾는 우리 동네 안식처</h3>
+              </div>
+              <span class="text-[11px] font-bold text-[#2D6A4F] bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 hidden">동네 밀착형 생활권</span>
+            </div>
+            <p class="text-xs sm:text-sm font-medium text-[#2D6A4F] mb-2 pl-10">멀고 문턱 높은 상담센터 대신 골목길에서 마주하는 아늑한 살롱</p>
+            <div id="whyContent1" class="pl-10 pt-2 border-t border-stone-100 mt-3 hidden">
+              <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                병원이나 복잡한 센터 방문이 부담스러웠던 분들을 위해 동네 중심에 문을 열었습니다. 식물과 원목, 잔잔한 음악과 따뜻한 찻물이 준비되어 있어 예약 없이도 가볍게 산책길에 들러 마음의 호흡을 가다듬을 수 있습니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div onclick="selectWhyTab(2)" id="whyCard2" class="why-card cursor-pointer rounded-2xl transition-all duration-300 p-5 border bg-[#F4F1DE]/40 hover:bg-[#F4F1DE]/80 border-stone-200/80">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-3">
+                <span id="whyBadge2" class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold bg-stone-200 text-stone-700">03</span>
+                <h3 class="text-base sm:text-lg font-bold text-stone-800">일회성 위로를 넘어 지속 가능한 이웃 상호 돌봄망</h3>
+              </div>
+              <span class="text-[11px] font-bold text-[#2D6A4F] bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 hidden">관계와 치유의 선순환</span>
+            </div>
+            <p class="text-xs sm:text-sm font-medium text-[#2D6A4F] mb-2 pl-10">청년과 로컬 주민이 서로의 지지자가 되는 따뜻한 공동체 형성</p>
+            <div id="whyContent2" class="pl-10 pt-2 border-t border-stone-100 mt-3 hidden">
+              <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                한 번의 세션으로 끝나는 강의가 아닙니다. 살롱을 거쳐간 이웃들은 서로의 안부를 묻는 든든한 동네 메이트가 됩니다. 고립과 단절을 넘어, 세대가 함께 밥을 먹고 마음을 나누는 끈끈한 사회적 관계망을 복원합니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-3">
+            <button onclick="openBookingModal('welcome-trial')" class="px-6 py-3 text-xs sm:text-sm font-semibold text-white bg-[#2D6A4F] hover:bg-[#1B4332] rounded-xl shadow-sm hover:shadow transition-all flex items-center gap-2 cursor-pointer">
+              <span>아키텍트 1:1 사전 상담 예약하기</span>
+              <span>➔</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Interlocking Rounded Photos Layout (Sample Benchmark) -->
+        <div class="lg:col-span-6 relative">
+          <div class="relative mx-auto max-w-lg">
+            <div class="w-[82%] rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[4/3] relative z-10">
+              <img src="/images/mindfulness_dialogue_session_1794011259814.jpg" onerror="this.src='/src/assets/images/mindfulness_dialogue_session_1794011259814.jpg'" alt="이웃과 함께하는 따뜻한 대화와 쉼" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">
+                <span class="text-white text-xs font-semibold">🌿 누구나 편안하게 슬리퍼를 신고 찾는 골목 사랑방</span>
+              </div>
+            </div>
+
+            <div class="w-[68%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-square absolute -bottom-8 -right-4 sm:-right-6 z-20">
+              <img src="/images/mindfulness_hero_space_1794011259176.jpg" onerror="this.src='/src/assets/images/mindfulness_hero_space_1794011259176.jpg'" alt="아늑한 쉼표 살롱 공간" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-3.5">
+                <span class="text-[11px] text-[#E9D8A6] font-bold">COMMUNITY WARMTH</span>
+                <p class="text-xs font-bold text-white">마음의 온도를 채우는 쉼</p>
+              </div>
+            </div>
+
+            <div class="absolute top-6 -left-4 sm:-left-6 z-30 bg-[#2D6A4F] text-[#F4F1DE] py-2.5 px-4 rounded-2xl shadow-lg border border-[#52B788]/30 max-w-[210px] text-xs font-medium leading-snug">
+              <span class="font-bold text-[#E9D8A6] block mb-0.5">💡 지속 가능한 로컬 연대</span>
+              마음의 온도를 높여 외로움과 고립을 예방합니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. INTERACTIVE MIND DIAGNOSIS QUIZ ==================== -->
+    <section id="quiz" class="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+      <div class="bg-gradient-to-br from-[#F4F1DE]/60 via-white to-emerald-50/50 rounded-3xl p-6 sm:p-10 border border-[#E9D8A6]/80 shadow-md relative overflow-hidden">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#2D6A4F]/10 text-[#2D6A4F] text-xs font-bold mb-3">
+            <span>✨ 30초 인터랙티브 마음 날씨 진단</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#1B4332] tracking-tight mb-2">
+            오늘 나의 마음 날씨는 어떤가요?
+          </h2>
+          <p class="text-xs sm:text-sm text-stone-600">
+            3가지 질문에 답하시면 지금 내 상태에 가장 편안한 맞춤형 마인드풀니스 프로그램을 추천해 드립니다.
+          </p>
+        </div>
+
+        <!-- Quiz Progress and Questions -->
+        <div id="quizQuestionBox">
+          <div class="max-w-md mx-auto mb-6">
+            <div class="flex items-center justify-between text-xs font-semibold text-stone-500 mb-2">
+              <span id="quizStepText">질문 1 / 3</span>
+              <span id="quizPercentText">33%</span>
+            </div>
+            <div class="w-full h-2 bg-stone-200 rounded-full overflow-hidden">
+              <div id="quizProgressBar" class="h-full bg-[#2D6A4F] transition-all duration-300 rounded-full" style="width: 33%"></div>
+            </div>
+          </div>
+
+          <div class="max-w-xl mx-auto">
+            <h3 id="quizQuestionTitle" class="text-lg sm:text-xl font-bold text-[#1B4332] text-center mb-6">
+              Q1. 요즘 일상에서 가장 자주 느끼는 마음 상태는 무엇인가요?
+            </h3>
+            <div id="quizOptionsContainer" class="space-y-3">
+              <!-- Options rendered dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Quiz Result Card (Hidden by default) -->
+        <div id="quizResultBox" class="hidden max-w-xl mx-auto bg-white rounded-3xl p-6 sm:p-8 border border-emerald-200 shadow-lg text-center animate-fadeIn">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-[#2D6A4F] flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+            ✓
+          </div>
+          <span class="text-xs font-bold text-[#2D6A4F] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 uppercase tracking-wide">
+            맞춤 쉼표 추천 결과
+          </span>
+          <h3 id="quizResultTitle" class="text-xl sm:text-2xl font-bold text-[#1B4332] mt-3 mb-2">
+            [마음챙김 대화 살롱]이 딱 맞아요!
+          </h3>
+          <p id="quizResultDesc" class="text-xs sm:text-sm text-stone-600 mb-6 leading-relaxed">
+            상처 주지 않고 상처받지 않는 비폭력 대화(NVC)와 온전한 경청 훈련
+          </p>
+          <div class="bg-[#F8F9FA] rounded-2xl p-4 text-left mb-6 border border-stone-200 text-xs sm:text-sm space-y-2">
+            <div class="font-bold text-[#1B4332] flex items-center gap-1.5">
+              <span>✨ 추천 이유 & 혜택</span>
+            </div>
+            <p class="text-stone-600 text-xs leading-relaxed">
+              현재 느끼시는 관계와 일상의 피로도를 낮추고, 부담 없는 소그룹 환경에서 스스로의 속도를 되찾을 수 있도록 설계된 세션입니다.
+            </p>
+            <div class="pt-1 text-[#2D6A4F] font-semibold text-xs">
+              🎁 첫 방문 웰컴 세션 신청 시 1회 무료 체험권 자동 발급!
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <button onclick="resetQuiz()" class="py-3 px-4 rounded-xl border border-stone-300 text-stone-600 hover:bg-stone-100 text-xs sm:text-sm font-semibold flex items-center justify-center gap-1.5 transition-colors cursor-pointer">
+              ↺ 다시 진단하기
+            </button>
+            <button id="quizBookBtn" onclick="openBookingModal('dialogue-salon')" class="flex-1 py-3 px-5 rounded-xl bg-[#2D6A4F] hover:bg-[#1B4332] text-white text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer">
+              <span>추천 프로그램으로 웰컴 예약하기 ➔</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. REAL REVIEWS SECTION ==================== -->
+    <section id="reviews" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-semibold text-[#2D6A4F] uppercase tracking-wider mb-2">
+            <span class="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800">📝</span>
+            <span>쉼표 살롱 리얼 참여 이야기</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1B4332] tracking-tight">
+            혼자가 아니라는 다정한 안도감,<br class="hidden sm:inline" />
+            <span class="text-[#2D6A4F]">동네 이웃들이 들려주는 진짜 마음 후기</span>
+          </h2>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="openBookingModal('welcome-trial')" class="px-4 py-2 text-xs sm:text-sm font-semibold text-[#2D6A4F] bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-full transition-colors flex items-center gap-1.5 cursor-pointer">
+            <span>나도 쉼표 살롱 경험하기 ➔</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-2 mb-8">
+        <button onclick="filterReviews('all')" id="revTabAll" class="px-4 py-1.5 rounded-full text-xs font-semibold transition-all whitespace-nowrap bg-[#2D6A4F] text-white shadow-sm">
+          전체 후기
+        </button>
+        <button onclick="filterReviews('youth')" id="revTabYouth" class="px-4 py-1.5 rounded-full text-xs font-semibold transition-all whitespace-nowrap bg-white text-stone-600 hover:bg-stone-100 border border-stone-200">
+          2030 청년 이웃
+        </button>
+        <button onclick="filterReviews('parent')" id="revTabParent" class="px-4 py-1.5 rounded-full text-xs font-semibold transition-all whitespace-nowrap bg-white text-stone-600 hover:bg-stone-100 border border-stone-200">
+          워킹맘 & 학부모
+        </button>
+        <button onclick="filterReviews('senior')" id="revTabSenior" class="px-4 py-1.5 rounded-full text-xs font-semibold transition-all whitespace-nowrap bg-white text-stone-600 hover:bg-stone-100 border border-stone-200">
+          시니어 & 로컬 이웃
+        </button>
+      </div>
+
+      <!-- Reviews Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="reviewsGrid">
+        <!-- Review 1 -->
+        <div class="review-card bg-white rounded-3xl p-6 border border-stone-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" data-category="youth">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-[#2D6A4F]/20 bg-stone-100 shrink-0">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="김민우" class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-[#1B4332]">김민우 님</h4>
+                <span class="text-[11px] text-stone-500 block leading-tight">28세 IT 개발자 · 마포 거주</span>
+                <span class="text-[10px] text-[#2D6A4F] font-semibold">[마음챙김 대화 살롱]</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-1 mb-3 text-amber-400 text-xs">★★★★★</div>
+            <h5 class="text-sm font-bold text-stone-900 leading-snug mb-3 min-h-[40px]">
+              "야근 후 원룸에 들어가면 늘 공허했는데, 슬리퍼 신고 찾아갈 수 있는 동네 쉼터가 생겼습니다."
+            </h5>
+            <p id="revText1" class="text-xs text-stone-600 leading-relaxed line-clamp-3">
+              컴퓨터 화면만 바라보며 사람과의 대화에 지쳐 있었어요. 별이엄마의 쉼표 살롱은 평가나 충고 없이 내 말을 온전히 들어주는 유일한 공간이었습니다. 이제는 매주 화요일 퇴근길이 기다려져요.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-stone-100">
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="text-[10px] font-medium text-stone-500 bg-stone-100 px-2 py-0.5 rounded-full">#관계피로해소</span>
+              <span class="text-[10px] font-medium text-stone-500 bg-stone-100 px-2 py-0.5 rounded-full">#온전한경청</span>
+            </div>
+            <button onclick="toggleReviewExpand('revText1', this)" class="w-full flex items-center justify-between text-xs font-semibold text-[#2D6A4F] hover:text-[#1B4332] py-1 cursor-pointer">
+              <span>이야기 더보기</span>
+              <span>➔</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card bg-white rounded-3xl p-6 border border-stone-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" data-category="parent">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-[#2D6A4F]/20 bg-stone-100 shrink-0">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="이선영" class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-[#1B4332]">이선영 님</h4>
+                <span class="text-[11px] text-stone-500 block leading-tight">39세 초등맘 & 마케터</span>
+                <span class="text-[10px] text-[#2D6A4F] font-semibold">[로컬 티 & 오감 명상]</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-1 mb-3 text-amber-400 text-xs">★★★★★</div>
+            <h5 class="text-sm font-bold text-stone-900 leading-snug mb-3 min-h-[40px]">
+              "엄마로서, 직장인으로서 쥐어짜던 제 마음을 처음으로 다독여준 90분이었습니다."
+            </h5>
+            <p id="revText2" class="text-xs text-stone-600 leading-relaxed line-clamp-3">
+              가족들을 챙기느라 정작 제 감정은 잊고 살았어요. 차를 우리며 김을 바라보고 향을 맡는 동안 마음 밑바닥에서 뜨거운 눈물이 났습니다. 별이엄마님의 따스한 눈빛 하나로 지난 몇 달간의 번아웃이 녹아내렸어요.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-stone-100">
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="text-[10px] font-medium text-stone-500 bg-stone-100 px-2 py-0.5 rounded-full">#엄마의쉼표</span>
+              <span class="text-[10px] font-medium text-stone-500 bg-stone-100 px-2 py-0.5 rounded-full">#티명상</span>
+            </div>
+            <button onclick="toggleReviewExpand('revText2', this)" class="w-full flex items-center justify-between text-xs font-semibold text-[#2D6A4F] hover:text-[#1B4332] py-1 cursor-pointer">
+              <span>이야기 더보기</span>
+              <span>➔</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card bg-white rounded-3xl p-6 border border-stone-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" data-category="youth">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-[#2D6A4F]/20 bg-stone-100 shrink-0">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="박서준" class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-[#1B4332]">박서준 님</h4>
+                <span class="text-[11px] text-stone-500 block leading-tight">25세 취업준비생</span>
+                <span class="text-[10px] text-[#2D6A4F] font-semibold">[청년 소셜 다이닝]</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-1 mb-3 text-amber-400 text-xs">★★★★★</div>
+            <h5 class="text-sm font-bold text-stone-900 leading-snug mb-3 min-h-[40px]">
+              "스펙이나 취업 질문 없이 오롯이 나로 환대받는 식탁에서 큰 위로를 얻었습니다."
+            </h5>
+            <p id="revText3" class="text-xs text-stone-600 leading-relaxed line-clamp-3">
+              취준 기간이 길어지면서 친구들 만나기도 꺼려졌는데, 닉네임으로 부르며 따뜻한 솥밥을 나누는 자리가 제게는 산소호흡기 같았습니다. 나만 뒤처지는 게 아니라는 안도감을 동네 이웃들에게 배웠어요.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-stone-100">
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="text-[10px] font-medium text-stone-500 bg-stone-100 px-2 py-0.5 rounded-full">#청년식탁</span>
+              <span class="text-[10px] font-medium text-stone-500 bg-stone-100 px-2 py-0.5 rounded-full">#자존감회복</span>
+            </div>
+            <button onclick="toggleReviewExpand('revText3', this)" class="w-full flex items-center justify-between text-xs font-semibold text-[#2D6A4F] hover:text-[#1B4332] py-1 cursor-pointer">
+              <span>이야기 더보기</span>
+              <span>➔</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card bg-white rounded-3xl p-6 border border-stone-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" data-category="senior">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-[#2D6A4F]/20 bg-stone-100 shrink-0">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="정동현" class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-[#1B4332]">정동현 님</h4>
+                <span class="text-[11px] text-stone-500 block leading-tight">64세 지역 주민 · 은퇴 이웃</span>
+                <span class="text-[10px] text-[#2D6A4F] font-semibold">[마음챙김 대화 살롱]</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-1 mb-3 text-amber-400 text-xs">★★★★★</div>
+            <h5 class="text-sm font-bold text-stone-900 leading-snug mb-3 min-h-[40px]">
+              "세대 차이 없이 젊은 이웃들과 진심으로 소통할 수 있어 동네 사는 재미가 되살아났습니다."
+            </h5>
+            <p id="revText4" class="text-xs text-stone-600 leading-relaxed line-clamp-3">
+              퇴직 후 관계가 좁아지며 우울감이 찾아왔는데, 이곳에서 청년들의 고민을 듣고 제 삶의 경험을 비난 없이 나누며 깊은 유대감을 느꼈습니다. 세대를 잇는 별이엄마의 소통 설계에 감탄했습니다.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-stone-100">
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="text-[10px] font-medium text-stone-500 bg-stone-100 px-2 py-0.5 rounded-full">#세대공감</span>
+              <span class="text-[10px] font-medium text-stone-500 bg-stone-100 px-2 py-0.5 rounded-full">#지역연대</span>
+            </div>
+            <button onclick="toggleReviewExpand('revText4', this)" class="w-full flex items-center justify-between text-xs font-semibold text-[#2D6A4F] hover:text-[#1B4332] py-1 cursor-pointer">
+              <span>이야기 더보기</span>
+              <span>➔</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. ARCHITECT & SPACE GALLERY ==================== -->
+    <section id="spaces" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div id="architect" class="bg-white rounded-3xl p-6 sm:p-10 border border-stone-200/90 shadow-sm mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5">
+            <div class="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-md border border-stone-200 group">
+              <img src="/images/mindfulness_community_gathering_1794011261878.jpg" onerror="this.src='/src/assets/images/mindfulness_community_gathering_1794011261878.jpg'" alt="별이엄마 아키텍트" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500" />
+              <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-xl border border-stone-200 shadow-sm">
+                <span class="text-xs font-bold text-[#1B4332]">별이엄마 (마인드풀니스 & 커뮤니케이션 아키텍트)</span>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-[#2D6A4F] text-xs font-bold border border-emerald-200">
+              <span>✨ 창직 모델 소개 · Local Mindfulness Architect</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-bold text-[#1B4332] tracking-tight">
+              "동네 골목마다 마음을 기댈 수 있는<br />
+              따뜻한 쉼표 하나쯤은 있어야 하니까요."
+            </h3>
+            <p class="text-xs sm:text-sm text-stone-600 leading-relaxed font-light">
+              현대 사회는 연결되어 있으면서도 그 어느 때보다 외롭고 지쳐 있습니다. 병원에 가기엔 문턱이 높고, 혼자 버티기엔 버거운 마음들. 별이엄마는 이웃과 청년들이 슬리퍼를 신고 편안히 찾아와 따뜻한 차 한 잔을 나누며 스스로의 호흡을 되찾는 로컬 마인드풀니스 커뮤니케이션 공간을 설계합니다.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs text-stone-700">
+              <div class="flex items-center gap-2 p-2.5 rounded-xl bg-[#F8F9FA] border border-stone-100">
+                <span class="text-[#2D6A4F] font-bold">✓</span>
+                <span>국가공인 전문상담 & 라이프 코칭 자격</span>
+              </div>
+              <div class="flex items-center gap-2 p-2.5 rounded-xl bg-[#F8F9FA] border border-stone-100">
+                <span class="text-[#2D6A4F] font-bold">✓</span>
+                <span>비폭력 대화(NVC) 전문가 과정 수료</span>
+              </div>
+              <div class="flex items-center gap-2 p-2.5 rounded-xl bg-[#F8F9FA] border border-stone-100">
+                <span class="text-[#2D6A4F] font-bold">✓</span>
+                <span>한국명상학회 마인드풀니스 지도자</span>
+              </div>
+              <div class="flex items-center gap-2 p-2.5 rounded-xl bg-[#F8F9FA] border border-stone-100">
+                <span class="text-[#2D6A4F] font-bold">✓</span>
+                <span>15년 로컬 커뮤니티 및 부모·청년 대화 코칭</span>
+              </div>
+            </div>
+            <div class="pt-2">
+              <button onclick="openBookingModal('welcome-trial')" class="px-5 py-2.5 text-xs sm:text-sm font-bold text-white bg-[#2D6A4F] hover:bg-[#1B4332] rounded-xl transition-all shadow-sm cursor-pointer">
+                별이엄마와 1:1 차담 신청하기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Space Corners -->
+      <div>
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold text-[#2D6A4F] uppercase tracking-wider mb-2">
+            <span class="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800">🏡</span>
+            <span>공간 둘러보기</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#1B4332] tracking-tight">
+            따뜻한 온기가 머무는 쉼표 살롱의 구석구석
+          </h2>
+          <p class="text-xs sm:text-sm text-stone-600 mt-1">
+            서울 마포구 연남·망원 골목 숲길 인접, 차분한 햇살과 원목 향이 가득합니다.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <!-- Space 1 -->
+          <div class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition-all group">
+            <div class="relative aspect-[4/3] overflow-hidden bg-stone-100">
+              <img src="/images/mindfulness_dialogue_session_1794011259814.jpg" onerror="this.src='/src/assets/images/mindfulness_dialogue_session_1794011259814.jpg'" alt="온기 마당" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">
+                <h4 class="text-white text-base font-bold">온기 마당 (대화 라운지)</h4>
+              </div>
+            </div>
+            <div class="p-5">
+              <p class="text-xs font-semibold text-[#2D6A4F] mb-1.5">둘러앉아 마음을 나누는 원형 좌식 마루</p>
+              <p class="text-xs text-stone-600 leading-relaxed mb-4">
+                따뜻한 원목과 천연 린넨 방석으로 꾸며진 중앙 라운지. 부드러운 자연광 속에서 눈을 맞추며 대화할 수 있습니다.
+              </p>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="text-[11px] font-medium text-stone-600 bg-stone-100 px-2.5 py-1 rounded-lg">소그룹 원형 배치</span>
+                <span class="text-[11px] font-medium text-stone-600 bg-stone-100 px-2.5 py-1 rounded-lg">천연 아로마 디퓨징</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Space 2 -->
+          <div class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition-all group">
+            <div class="relative aspect-[4/3] overflow-hidden bg-stone-100">
+              <img src="/images/mindfulness_tea_meditation_1794011260644.jpg" onerror="this.src='/src/assets/images/mindfulness_tea_meditation_1794011260644.jpg'" alt="다도 & 싱킹 룸" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">
+                <h4 class="text-white text-base font-bold">다도 & 싱킹 룸 (티 명상 코너)</h4>
+              </div>
+            </div>
+            <div class="p-5">
+              <p class="text-xs font-semibold text-[#2D6A4F] mb-1.5">차 향기와 싱잉볼 사운드가 흐르는 고요한 공간</p>
+              <p class="text-xs text-stone-600 leading-relaxed mb-4">
+                엄선된 전통 도자기 다기와 청정한 로컬 허브차가 상시 준비된 곳. 혼자만의 사색과 바디스캔 명상을 지원합니다.
+              </p>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="text-[11px] font-medium text-stone-600 bg-stone-100 px-2.5 py-1 rounded-lg">로컬 허브티 바</span>
+                <span class="text-[11px] font-medium text-stone-600 bg-stone-100 px-2.5 py-1 rounded-lg">수제 싱잉볼 비치</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Space 3 -->
+          <div class="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition-all group">
+            <div class="relative aspect-[4/3] overflow-hidden bg-stone-100">
+              <img src="/images/mindfulness_hero_space_1794011259176.jpg" onerror="this.src='/src/assets/images/mindfulness_hero_space_1794011259176.jpg'" alt="마음 서가 & 소셜 키친" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">
+                <h4 class="text-white text-base font-bold">마음 서가 & 소셜 키친</h4>
+              </div>
+            </div>
+            <div class="p-5">
+              <p class="text-xs font-semibold text-[#2D6A4F] mb-1.5">다정한 책과 정성스러운 솥밥이 익어가는 곳</p>
+              <p class="text-xs text-stone-600 leading-relaxed mb-4">
+                심리학, 마인드풀니스 추천 도서 300여 권과 건강한 로컬 식재료로 차려내는 솥밥 다이닝 공간입니다.
+              </p>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="text-[11px] font-medium text-stone-600 bg-stone-100 px-2.5 py-1 rounded-lg">마음 큐레이션 서가</span>
+                <span class="text-[11px] font-medium text-stone-600 bg-stone-100 px-2.5 py-1 rounded-lg">소셜 키친 식탁</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 9. FAQ SECTION ==================== -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <div class="text-center mb-10">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-[#2D6A4F] text-xs font-bold border border-emerald-200 mb-2">
+          <span>자주 묻는 질문</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-[#1B4332] tracking-tight">
+          쉼표 살롱 방문 전 궁금하신 점들
+        </h2>
+        <p class="text-xs sm:text-sm text-stone-600 mt-1">
+          처음 오시는 분들이 가장 자주 질문해 주시는 내용들을 정리했습니다.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <!-- FAQ 1 -->
+        <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(0)" class="w-full text-left p-5 flex items-center justify-between gap-4 font-semibold text-stone-800 text-sm sm:text-base hover:bg-stone-50 transition-colors cursor-pointer">
+            <span class="flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-[#2D6A4F]/10 text-[#2D6A4F] text-xs font-bold flex items-center justify-center shrink-0">Q</span>
+              <span>명상이나 대화 모임에 처음인데, 낯가림이 심해도 참여할 수 있나요?</span>
+            </span>
+            <span id="faqArrow0" class="text-[#2D6A4F] font-bold text-lg">▲</span>
+          </button>
+          <div id="faqAnswer0" class="px-5 pb-5 pt-1 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 bg-[#F8F9FA] block">
+            <p class="pl-9">
+              네, 전혀 걱정하지 않으셔도 됩니다! 쉼표 살롱은 말을 억지로 시키거나 재촉하지 않습니다. 조용히 다른 분들의 이야기를 경청하거나 차만 마셔도 충분히 존중받는 규칙으로 운영됩니다. 첫 방문자의 80% 이상이 혼자 오시며 자연스럽게 스며드십니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(1)" class="w-full text-left p-5 flex items-center justify-between gap-4 font-semibold text-stone-800 text-sm sm:text-base hover:bg-stone-50 transition-colors cursor-pointer">
+            <span class="flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-[#2D6A4F]/10 text-[#2D6A4F] text-xs font-bold flex items-center justify-center shrink-0">Q</span>
+              <span>심리상담소나 정신건강의학과와는 어떤 점이 다른가요?</span>
+            </span>
+            <span id="faqArrow1" class="text-stone-400 font-bold text-lg">▼</span>
+          </button>
+          <div id="faqAnswer1" class="px-5 pb-5 pt-1 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 bg-[#F8F9FA] hidden">
+            <p class="pl-9">
+              병리적 진단이나 약물 처방을 내리는 곳이 아닌, 일상적인 스트레스와 관계 피로를 예방하고 회복하는 생활 속 웰니스 커뮤니티 공간입니다. 전문 코칭 자격을 갖춘 아키텍트가 편안한 일상 언어로 마음을 돌아볼 수 있도록 돕습니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(2)" class="w-full text-left p-5 flex items-center justify-between gap-4 font-semibold text-stone-800 text-sm sm:text-base hover:bg-stone-50 transition-colors cursor-pointer">
+            <span class="flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-[#2D6A4F]/10 text-[#2D6A4F] text-xs font-bold flex items-center justify-center shrink-0">Q</span>
+              <span>첫 방문 웰컴 세션은 어떻게 진행되나요?</span>
+            </span>
+            <span id="faqArrow2" class="text-stone-400 font-bold text-lg">▼</span>
+          </button>
+          <div id="faqAnswer2" class="px-5 pb-5 pt-1 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 bg-[#F8F9FA] hidden">
+            <p class="pl-9">
+              약 30~40분간 1:1로 진행되며, 따뜻한 웰컴 티를 대접해 드립니다. 현재 내 마음의 상태와 대화 고민을 가볍게 점검해 드리고, 본인에게 가장 편안한 살롱 프로그램이나 동네 루틴을 맞춤 추천해 드립니다. 비용은 무료입니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(3)" class="w-full text-left p-5 flex items-center justify-between gap-4 font-semibold text-stone-800 text-sm sm:text-base hover:bg-stone-50 transition-colors cursor-pointer">
+            <span class="flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-[#2D6A4F]/10 text-[#2D6A4F] text-xs font-bold flex items-center justify-center shrink-0">Q</span>
+              <span>청년이나 지역 주민을 위한 할인 혜택이 있나요?</span>
+            </span>
+            <span id="faqArrow3" class="text-stone-400 font-bold text-lg">▼</span>
+          </button>
+          <div id="faqAnswer3" class="px-5 pb-5 pt-1 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 bg-[#F8F9FA] hidden">
+            <p class="pl-9">
+              네! 마포구 및 인접 지역 주민, 2030 청년(취업준비생, 1인 가구 청년)의 경우 20%~40%의 로컬 상생 바우처 할인이 적용됩니다. 예약 신청 시 해당 체크박스를 선택해 주시면 됩니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 10. BOTTOM HERO CTA BANNER ==================== -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="relative rounded-3xl overflow-hidden bg-gradient-to-r from-[#2D6A4F] via-[#235841] to-[#1B4332] text-white p-8 sm:p-14 text-center shadow-xl">
+        <div class="absolute top-0 left-1/4 w-72 h-72 bg-[#52B788]/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 right-1/4 w-72 h-72 bg-[#E9D8A6]/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-2xl mx-auto space-y-5">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-[#E9D8A6] text-xs font-semibold border border-white/20">
+            <span>✨ 첫 방문 이웃을 위한 특별한 환대</span>
+          </div>
+
+          <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
+            동네에서 시작하는 따뜻한 마음 돌봄,<br />
+            <span class="text-[#E9D8A6]">웰컴 티 & 1:1 마음 진단 무료</span>
+          </h2>
+
+          <p class="text-xs sm:text-base text-stone-200 font-light leading-relaxed">
+            무거운 마음을 안고 계시다면 언제든 편하게 발걸음해 주세요.<br class="hidden sm:inline" />
+            따뜻한 찻물이 끓는 주전자와 함께, 별이엄마가 다정한 온기로 맞이하겠습니다.
+          </p>
+
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+            <button onclick="openBookingModal('welcome-trial')" class="w-full sm:w-auto px-8 py-4 text-sm sm:text-base font-bold text-[#1B4332] bg-[#E9D8A6] hover:bg-[#F4F1DE] active:scale-98 rounded-full shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 cursor-pointer">
+              <span>첫 방문 웰컴 세션 예약하기 ➔</span>
+            </button>
+            <a href="tel:02-588-0890" class="w-full sm:w-auto px-6 py-4 text-sm sm:text-base font-medium text-white/90 hover:text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-full transition-all flex items-center justify-center gap-2">
+              <span>🍵 전화 문의 (02-588-0890)</span>
+            </a>
+          </div>
+
+          <p class="text-[11px] text-stone-300 pt-2">
+            * 웰컴 세션은 100% 예약제로 1:1 비밀 보장 속에 안전하게 진행됩니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 11. FOOTER ==================== -->
+    <footer class="bg-[#1A2E26] text-stone-300 pt-14 pb-24 border-t border-stone-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap items-center justify-between gap-4 pb-8 border-b border-stone-700/80 text-xs sm:text-sm">
+          <div class="flex flex-wrap gap-4 sm:gap-6 font-medium text-stone-200">
+            <a href="#architect" class="hover:text-white transition-colors">살롱 소개</a>
+            <a href="#programs" class="hover:text-white transition-colors">프로그램 안내</a>
+            <button onclick="alert('개인정보처리방침: 참여자의 모든 대화 내용 및 개인정보는 철저한 비밀유지 서약 하에 보호됩니다.')" class="hover:text-white transition-colors">
+              개인정보처리방침
+            </button>
+            <button onclick="alert('이용약관: 쉼표 살롱은 상호 존중과 안전한 소통을 최우선 원칙으로 합니다.')" class="hover:text-white transition-colors">
+              이용약관
+            </button>
+            <a href="#spaces" class="hover:text-white transition-colors">공간 대관 문의</a>
+            <a href="#spaces" class="hover:text-white transition-colors">오시는 길</a>
+          </div>
+          <div class="flex items-center gap-3 text-stone-400 text-xs">
+            <span>SNS:</span>
+            <span class="hover:text-white cursor-pointer">인스타그램</span>
+            <span>·</span>
+            <span class="hover:text-white cursor-pointer">유튜브</span>
+            <span>·</span>
+            <span class="hover:text-white cursor-pointer">카카오톡 채널</span>
+          </div>
+        </div>
+
+        <div class="py-8 grid grid-cols-1 md:grid-cols-12 gap-8 text-xs text-stone-400 leading-relaxed">
+          <div class="md:col-span-5 space-y-2">
+            <div class="flex items-center gap-2 text-white text-base font-bold mb-3">
+              <span class="w-6 h-6 rounded-lg bg-[#2D6A4F] text-[#F4F1DE] flex items-center justify-center font-serif text-sm">,</span>
+              <span>별이엄마의 쉼표 살롱</span>
+            </div>
+            <p class="text-stone-300">로컬 마인드풀니스 & 커뮤니케이션 아키텍트 연구소</p>
+            <p>
+              지역민과 청년의 고립을 예방하고, 안전한 대화와 쉼을 통해 마음의 온도를 높이는 지역 밀착형 라이프스타일 치유 공간입니다.
+            </p>
+          </div>
+
+          <div class="md:col-span-4 space-y-1.5">
+            <p class="font-semibold text-stone-300 mb-2">운영 및 사업자 정보</p>
+            <p>대표자: 별이엄마 (마인드풀니스 & 소통 아키텍트)</p>
+            <p>사업자등록번호: 214-81-04977 | 통신판매업신고: 제 2026-서울마포-0128호</p>
+            <p class="pt-1 text-stone-300">
+              📍 서울특별시 마포구 성미산로 128 (연남동) 쉼표빌딩 2층
+            </p>
+          </div>
+
+          <div class="md:col-span-3 space-y-1.5">
+            <p class="font-semibold text-stone-300 mb-2">상담 문의 & 이용 시간</p>
+            <p class="text-white text-lg font-bold text-[#E9D8A6]">📞 02-588-0890</p>
+            <p class="text-[11px]">⏰ 화~일 10:00 ~ 21:30 (월요일 휴무)</p>
+            <p class="text-[11px]">✉️ contact@byeolmom-salon.kr</p>
+          </div>
+        </div>
+
+        <div class="pt-6 border-t border-stone-800/80 text-[11px] text-stone-500 flex flex-col sm:flex-row items-center justify-between gap-2">
+          <p>© 2026 ByeolMom Mindfulness & Communication Salon. All Rights Reserved.</p>
+          <p class="text-stone-400 font-medium">본 웹사이트는 지역 사회적 창직 모델 실증 프로젝트의 일환으로 제작되었습니다.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==================== 12. BOTTOM STICKY FLOATING BAR ==================== -->
+    <div id="floatingBanner" class="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-r from-[#2D6A4F] via-[#245842] to-[#1B4332] text-white shadow-2xl border-t border-[#52B788]/30 py-3 px-4 sm:px-8 animate-slideUp">
+      <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3 overflow-hidden">
+          <span class="w-8 h-8 rounded-full bg-[#E9D8A6] text-[#1B4332] flex items-center justify-center text-sm font-bold shrink-0">
+            🌿
+          </span>
+          <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2 leading-tight">
+            <span class="text-xs sm:text-sm font-bold text-[#E9D8A6]">[첫 방문 특별 환대]</span>
+            <span class="text-xs sm:text-sm font-medium text-white truncate">따뜻한 웰컴 티 & 1:1 마음 진단 30분 무료 세션 예약 접수 중!</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+          <button onclick="openBookingModal('welcome-trial')" class="px-4 py-2 sm:py-2.5 bg-[#E9D8A6] hover:bg-[#F4F1DE] active:scale-98 text-[#1B4332] font-bold text-xs sm:text-sm rounded-full shadow-md transition-all flex items-center gap-1.5 cursor-pointer">
+            <span>지금 신청하기 ➔</span>
+          </button>
+          <button onclick="document.getElementById('floatingBanner').remove()" class="p-1.5 text-stone-300 hover:text-white rounded-lg hover:bg-white/10 transition-colors" title="배너 닫기">
+            ✕
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 13. BOOKING MODAL ==================== -->
+    <div id="bookingModal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-stone-200 animate-fadeIn">
+        <div class="bg-[#2D6A4F] text-white p-6 relative">
+          <button onclick="closeBookingModal()" class="absolute top-5 right-5 text-white/80 hover:text-white p-1 rounded-full hover:bg-white/10 transition-colors text-lg font-bold" title="닫기">
+            ✕
+          </button>
+          <div class="flex items-center gap-2 text-xs font-semibold text-[#E9D8A6] mb-1">
+            <span>✨ 별이엄마의 쉼표 살롱</span>
+          </div>
+          <h3 id="bookingModalHeading" class="text-xl sm:text-2xl font-bold tracking-tight">
+            쉼표 세션 예약 신청하기
+          </h3>
+          <p id="bookingModalSub" class="text-xs text-stone-200 mt-1 font-light">
+            어떤 부담도 없이 차 한 잔과 함께 편안하게 찾아오세요.
+          </p>
+        </div>
+
+        <!-- Booking Form -->
+        <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="p-6 space-y-4 max-h-[75vh] overflow-y-auto">
+          <div>
+            <label class="block text-xs font-bold text-stone-700 mb-1.5">
+              참여 희망 프로그램 <span class="text-emerald-600">*</span>
+            </label>
+            <select id="bookProgramSelect" class="w-full p-3 rounded-xl border border-stone-200 bg-stone-50 text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#2D6A4F]">
+              <option value="welcome-trial">🌿 [첫 방문 특별] 웰컴 티 & 1:1 마음 진단 (30분 / 무료)</option>
+              <option value="dialogue-salon">마음챙김 대화 살롱 (매주 화/목 저녁 19:30)</option>
+              <option value="tea-meditation">로컬 티(Tea) & 오감 명상 (매주 수 오전 / 토 오후)</option>
+              <option value="youth-dining">청년 & 1인 가구 소셜 다이닝 (격주 금 저녁 19:00)</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">
+                이름 / 마음 닉네임 <span class="text-emerald-600">*</span>
+              </label>
+              <input type="text" id="bookName" required placeholder="예: 김민지 또는 바다" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-200 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#2D6A4F]" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">
+                연락처 (안내 문자 발송) <span class="text-emerald-600">*</span>
+              </label>
+              <input type="tel" id="bookPhone" required placeholder="010-0000-0000" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-200 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#2D6A4F]" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-stone-700 mb-1.5">
+              해당되는 이웃 유형을 선택해 주세요
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2" id="categoryBtnGroup">
+              <button type="button" onclick="selectBookingCategory('청년 1인 가구', this)" class="cat-btn py-2 px-2 rounded-xl text-xs font-medium border transition-colors bg-[#2D6A4F] text-white border-[#2D6A4F]">
+                청년 1인 가구
+              </button>
+              <button type="button" onclick="selectBookingCategory('직장인', this)" class="cat-btn py-2 px-2 rounded-xl text-xs font-medium border transition-colors bg-white text-stone-600 border-stone-200 hover:bg-stone-50">
+                직장인
+              </button>
+              <button type="button" onclick="selectBookingCategory('워킹맘·부모', this)" class="cat-btn py-2 px-2 rounded-xl text-xs font-medium border transition-colors bg-white text-stone-600 border-stone-200 hover:bg-stone-50">
+                워킹맘·부모
+              </button>
+              <button type="button" onclick="selectBookingCategory('은퇴·시니어', this)" class="cat-btn py-2 px-2 rounded-xl text-xs font-medium border transition-colors bg-white text-stone-600 border-stone-200 hover:bg-stone-50">
+                은퇴·시니어
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">방문 희망 일자</label>
+              <input type="date" id="bookDate" value="2026-11-10" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-200 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#2D6A4F]" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">희망 시간대</label>
+              <select id="bookTime" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-200 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#2D6A4F]">
+                <option value="11:00">오전 11:00</option>
+                <option value="14:00" selected>오후 14:00</option>
+                <option value="16:00">오후 16:00</option>
+                <option value="19:30">저녁 19:30 (퇴근 후)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200 flex items-start gap-2.5">
+            <input type="checkbox" id="bookLocalCheck" checked class="mt-0.5 rounded text-[#2D6A4F] focus:ring-[#2D6A4F]" />
+            <label for="bookLocalCheck" class="text-xs text-[#1B4332] leading-tight">
+              <span class="font-bold">[로컬 바우처 혜택 신청]</span> 마포구 거주민 또는 2030 청년으로 추가 할인/지원 혜택을 희망합니다.
+            </label>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-stone-700 mb-1">
+              별이엄마에게 미리 전하고 싶은 마음 이야기 (선택)
+            </label>
+            <textarea id="bookNote" rows="3" placeholder="요즘 느끼는 감정이나 나누고 싶은 고민이 있다면 편안히 적어주세요." class="w-full p-3 rounded-xl border border-stone-200 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#2D6A4F]"></textarea>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" class="w-full py-3.5 px-4 bg-[#2D6A4F] hover:bg-[#1B4332] text-white font-bold text-sm rounded-xl shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer">
+              <span>예약 신청 완료하기 ➔</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Booking Confirmation State (Hidden initially) -->
+        <div id="bookingConfirmation" class="hidden p-8 text-center space-y-5 animate-fadeIn">
+          <div class="w-16 h-16 rounded-full bg-emerald-100 text-[#2D6A4F] flex items-center justify-center mx-auto text-3xl font-bold">
+            ✓
+          </div>
+          <div>
+            <span class="text-xs font-bold text-[#2D6A4F] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+              예약 접수 완료
+            </span>
+            <h4 id="confNameTitle" class="text-xl font-bold text-[#1B4332] mt-3">
+              이웃 님의 마음 쉼표가 준비되었습니다.
+            </h4>
+            <p class="text-xs text-stone-600 mt-1">
+              예약 번호: <span id="confCode" class="font-mono font-bold text-[#2D6A4F]">MIND-829104</span>
+            </p>
+          </div>
+          <div class="bg-[#F8F9FA] rounded-2xl p-4 text-left border border-stone-200 text-xs space-y-2">
+            <div class="flex justify-between border-b border-stone-100 pb-1.5">
+              <span class="text-stone-500">신청 세션</span>
+              <span id="confProgramName" class="font-bold text-stone-800">첫 방문 웰컴 티 & 1:1 마음 진단 (무료)</span>
+            </div>
+            <div class="flex justify-between border-b border-stone-100 pb-1.5">
+              <span class="text-stone-500">예약 일시</span>
+              <span id="confDateTime" class="font-semibold text-stone-800">2026-11-10 (14:00)</span>
+            </div>
+            <div class="flex justify-between border-b border-stone-100 pb-1.5">
+              <span class="text-stone-500">장소</span>
+              <span class="text-stone-800">서울 마포구 성미산로 128 쉼표빌딩 2층</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-stone-500">안내 문자</span>
+              <span id="confPhone" class="text-emerald-700 font-medium">연락처로 발송 예정</span>
+            </div>
+          </div>
+          <p class="text-xs text-stone-500 leading-relaxed font-light">
+            오시는 길 안내와 주차, 웰컴 티 취향 조사 문자가 1시간 이내로 발송됩니다. 편안한 발걸음으로 찾아와 주세요.
+          </p>
+          <button onclick="closeBookingModal()" class="w-full py-3 bg-[#2D6A4F] hover:bg-[#1B4332] text-white font-bold text-xs sm:text-sm rounded-xl transition-colors cursor-pointer">
+            확인 및 창 닫기
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 14. PROGRAM DETAIL MODAL ==================== -->
+    <div id="programModal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-white rounded-3xl max-w-xl w-full overflow-hidden shadow-2xl border border-stone-200 animate-fadeIn">
+        <div class="relative aspect-[16/8] overflow-hidden bg-stone-100">
+          <img id="modalProgImg" src="/images/mindfulness_dialogue_session_1794011259814.jpg" alt="프로그램 상세" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-6">
+            <span id="modalProgTag" class="self-start px-2.5 py-0.5 rounded-full text-xs font-bold mb-1.5 bg-emerald-50 text-emerald-800 border border-emerald-200">
+              소통 & 공감
+            </span>
+            <h3 id="modalProgTitle" class="text-xl sm:text-2xl font-bold text-white tracking-tight">
+              마음챙김 대화 살롱
+            </h3>
+          </div>
+          <button onclick="closeProgramModal()" class="absolute top-4 right-4 text-white bg-black/40 hover:bg-black/60 p-1.5 rounded-full text-sm font-bold transition-colors" title="닫기">
+            ✕
+          </button>
+        </div>
+
+        <div class="p-6 space-y-5 max-h-[65vh] overflow-y-auto text-xs sm:text-sm">
+          <p id="modalProgDesc" class="text-stone-700 leading-relaxed font-light">
+            상처 주지 않고 상처받지 않는 비폭력 대화(NVC)와 온전한 경청 훈련
+          </p>
+          <div class="grid grid-cols-2 gap-2.5 bg-[#F8F9FA] p-3.5 rounded-2xl border border-stone-200 text-stone-600 text-xs">
+            <div class="flex items-center gap-1.5">📅 <span id="modalProgSchedule">매주 화/목 19:30</span></div>
+            <div class="flex items-center gap-1.5">⏱ <span id="modalProgDuration">회당 90분</span></div>
+            <div class="flex items-center gap-1.5">👥 <span id="modalProgCapacity">소그룹 4~6인</span></div>
+            <div class="flex items-center gap-1.5">🎯 <span id="modalProgTarget" class="truncate">직장인 및 청년</span></div>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[#1B4332] text-sm mb-2.5">단계별 세션 로드맵</h4>
+            <div id="modalProgCurriculum" class="space-y-2">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs space-y-1">
+            <div class="flex justify-between items-baseline font-bold text-[#1B4332]">
+              <span>참가비 안내</span>
+              <span id="modalProgPrice" class="text-sm">월 4회 120,000원</span>
+            </div>
+            <p id="modalProgBenefit" class="text-[#2D6A4F] font-semibold">마포구/인근 지역민 & 청년 20% 추가 바우처 할인</p>
+          </div>
+        </div>
+
+        <div class="p-4 bg-stone-50 border-t border-stone-200 flex items-center justify-end gap-3">
+          <button onclick="closeProgramModal()" class="px-4 py-2.5 rounded-xl border border-stone-300 text-stone-600 hover:bg-stone-100 text-xs font-semibold cursor-pointer">
+            닫기
+          </button>
+          <button id="modalBookNowBtn" onclick="bookFromModal()" class="px-5 py-2.5 rounded-xl bg-[#2D6A4F] hover:bg-[#1B4332] text-white text-xs sm:text-sm font-bold shadow transition-all cursor-pointer">
+            이 프로그램 신청하기 ➔
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 15. EMBEDDED COMPLETE JAVASCRIPT ==================== -->
+    <script>
+      // Global Program Data Dictionary
+      const PROGRAM_DATA = {
+        'dialogue-salon': {
+          id: 'dialogue-salon',
+          tag: '소통 & 공감',
+          badgeClass: 'bg-emerald-50 text-emerald-800 border-emerald-200',
+          title: '마음챙김 대화 살롱',
+          shortDesc: '상처 주지 않고 상처받지 않는 비폭력 대화(NVC)와 온전한 경청 훈련',
+          image: '/images/mindfulness_dialogue_session_1794011259814.jpg',
+          schedule: '매주 화/목 저녁 19:30 ~ 21:00',
+          target: '인간관계 피로를 느끼는 직장인, 소통이 어려운 청년 및 부부',
+          capacity: '소그룹 4~6인 (안전한 비밀보장)',
+          duration: '회당 90분 / 4주 코스',
+          curriculum: [
+            { step: '1주차', desc: '내 마음의 기상도 그리기: 자동적 반응에서 멈춤으로' },
+            { step: '2주차', desc: '판단과 평가 내려놓기: 있는 그대로 관찰하고 표현하기' },
+            { step: '3주차', desc: '욕구의 발견: 갈등 너머에 숨겨진 진정한 바람 마주하기' },
+            { step: '4주차', desc: '연결의 대화: 부탁과 감사를 나누는 온전한 소통 완성' }
+          ],
+          price: '월 4회 120,000원 (첫 달 웰컴가 89,000원)',
+          benefit: '마포구/인근 지역민 & 청년 20% 추가 바우처 할인'
+        },
+        'tea-meditation': {
+          id: 'tea-meditation',
+          tag: '치유 & 리트릿',
+          badgeClass: 'bg-amber-50 text-amber-800 border-amber-200',
+          title: '로컬 티(Tea) & 오감 명상',
+          shortDesc: '정갈한 차 한잔과 향긋한 허브로 오감을 깨우고 뇌 피로를 덜어내는 쉼',
+          image: '/images/mindfulness_tea_meditation_1794011260644.jpg',
+          schedule: '매주 수 오전 10:30 / 토 오후 14:00',
+          target: '만성 번아웃, 불면, 머릿속 복잡한 생각으로 쉼이 간절한 분',
+          capacity: '소그룹 6인 정원',
+          duration: '회당 80분 / 1회 체험 또는 월 정기권',
+          curriculum: [
+            { step: 'Step 1', desc: '웰컴 허브티와 호흡 고르기 (외부 자극 차단)' },
+            { step: 'Step 2', desc: '찻잔의 온기와 향에 머무는 오감 집중 명상' },
+            { step: 'Step 3', desc: '티 저널링: 차를 마시며 떠오른 생각 흘려보내기' },
+            { step: 'Step 4', desc: '싱잉볼 진동 속에서 깊은 이완과 마무리 차담' }
+          ],
+          price: '1회 체험 35,000원 (정기 4회권 110,000원)',
+          benefit: '첫 방문 신청자 다도 전용 마인드풀 티백 키트 증정'
+        },
+        'youth-dining': {
+          id: 'youth-dining',
+          tag: '연대 & 소셜',
+          badgeClass: 'bg-emerald-50 text-emerald-800 border-emerald-200',
+          title: '청년 & 1인 가구 소셜 다이닝',
+          shortDesc: '따뜻한 솥밥 한 그릇과 함께 외로움을 덜고 이웃의 안부를 묻는 저녁 식탁',
+          image: '/images/mindfulness_hero_space_1794011259176.jpg',
+          schedule: '격주 금요일 저녁 19:00 ~ 21:30',
+          target: '홀로 식사하는 것이 익숙하지만 다정한 이웃 교류가 그리운 2030 청년',
+          capacity: '8인 정원 (청년 및 로컬 이웃)',
+          duration: '회당 150분 (식사 + 테마 대화)',
+          curriculum: [
+            { step: '1부 (40분)', desc: '정갈한 계절 솥밥 식사와 감각적인 식사 명상' },
+            { step: '2부 (50분)', desc: '오늘의 질문: 나를 웃게 한 사소한 순간들 나누기' },
+            { step: '3부 (40분)', desc: '느슨하지만 단단한 이웃 연대: 응원 쪽지 교환' }
+          ],
+          price: '회당 25,000원 (식재료비 및 살롱 이용료 포함)',
+          benefit: '청년 1인 가구 자립 청년 참가비 40% 지원 (청년 바우처)'
+        }
+      };
+
+      // 1. Mobile Menu Toggle
+      function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        const iconOpen = document.getElementById('menuIconOpen');
+        const iconClose = document.getElementById('menuIconClose');
+        const isOpen = !menu.classList.contains('hidden');
+        if (isOpen) {
+          menu.classList.add('hidden');
+          iconOpen.classList.remove('hidden');
+          iconClose.classList.add('hidden');
+        } else {
+          menu.classList.remove('hidden');
+          iconOpen.classList.add('hidden');
+          iconClose.classList.remove('hidden');
+        }
+      }
+
+      // 2. Hero Slide Carousel
+      const heroSlides = [
+        {
+          id: 'dialogue-salon',
+          tag: '대화 & 경청',
+          title: '상처받지 않는 공감 대화 살롱',
+          subtitle: '가족, 직장, 친구 관계의 피로를 덜어내는 비폭력 대화(NVC) 실습',
+        },
+        {
+          id: 'tea-meditation',
+          tag: '다도 & 싱킹',
+          title: '따뜻한 로컬 티(Tea) & 오감 명상',
+          subtitle: '머릿속 복잡한 소음을 끄고 차 한 잔의 온기에 머무는 시간',
+        },
+        {
+          id: 'youth-dining',
+          tag: '청년 & 식탁',
+          title: '청년 1인 가구 따뜻한 솥밥 다이닝',
+          subtitle: '나이·스펙 묻지 않는 다정한 이웃들과 함께 나누는 건강한 한 끼',
+        }
+      ];
+      let currentHeroIdx = 0;
+      let heroTimer = null;
+      let isHeroPlaying = true;
+
+      function renderHeroSlide(idx) {
+        currentHeroIdx = idx;
+        const slide = heroSlides[idx];
+        document.getElementById('heroSlideTag').innerText = slide.tag;
+        document.getElementById('heroSlideNum').innerText = (idx + 1) + ' / ' + heroSlides.length;
+        document.getElementById('heroSlideTitle').innerText = slide.title;
+        document.getElementById('heroSlideSubtitle').innerText = slide.subtitle;
+        document.getElementById('heroSlideCta').setAttribute('onclick', "openProgramModal('" + slide.id + "')");
+
+        const dots = document.getElementById('heroDotsContainer').children;
+        for (let i = 0; i < dots.length; i++) {
+          if (i === idx) {
+            dots[i].className = 'h-1.5 rounded-full transition-all w-6 bg-[#E9D8A6]';
+          } else {
+            dots[i].className = 'h-1.5 rounded-full transition-all w-2 bg-white/40';
+          }
+        }
+      }
+
+      function setHeroSlide(idx) {
+        renderHeroSlide(idx);
+        restartHeroTimer();
+      }
+
+      function toggleHeroPlay() {
+        const btn = document.getElementById('heroPlayPauseBtn');
+        if (isHeroPlaying) {
+          clearInterval(heroTimer);
+          isHeroPlaying = false;
+          btn.innerText = '▶';
+        } else {
+          isHeroPlaying = true;
+          btn.innerText = '⏸';
+          startHeroTimer();
+        }
+      }
+
+      function startHeroTimer() {
+        clearInterval(heroTimer);
+        heroTimer = setInterval(() => {
+          if (isHeroPlaying) {
+            const nextIdx = (currentHeroIdx + 1) % heroSlides.length;
+            renderHeroSlide(nextIdx);
+          }
+        }, 4500);
+      }
+
+      function restartHeroTimer() {
+        if (isHeroPlaying) {
+          startHeroTimer();
+        }
+      }
+      startHeroTimer();
+
+      // 3. Program Filtering
+      function filterPrograms(category) {
+        const cards = document.querySelectorAll('.program-card');
+        cards.forEach(card => {
+          if (category === 'all' || card.getAttribute('data-category') === category) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Tab styles
+        const tabs = {
+          'all': 'btnTabAll',
+          'dialogue': 'btnTabDialogue',
+          'meditation': 'btnTabMeditation',
+          'social': 'btnTabSocial'
+        };
+        Object.keys(tabs).forEach(cat => {
+          const btn = document.getElementById(tabs[cat]);
+          if (cat === category) {
+            btn.className = 'px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all whitespace-nowrap bg-[#2D6A4F] text-white shadow-sm';
+          } else {
+            btn.className = 'px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all whitespace-nowrap bg-white text-stone-600 hover:bg-stone-100 border border-stone-200';
+          }
+        });
+      }
+
+      // 4. Why Section Accordion Tabs
+      function selectWhyTab(idx) {
+        for (let i = 0; i < 3; i++) {
+          const card = document.getElementById('whyCard' + i);
+          const badge = document.getElementById('whyBadge' + i);
+          const content = document.getElementById('whyContent' + i);
+          if (i === idx) {
+            card.className = 'why-card cursor-pointer rounded-2xl transition-all duration-300 p-5 border bg-white border-[#2D6A4F] shadow-md ring-2 ring-[#2D6A4F]/10 scale-[1.01]';
+            badge.className = 'w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold bg-[#2D6A4F] text-white';
+            content.classList.remove('hidden');
+          } else {
+            card.className = 'why-card cursor-pointer rounded-2xl transition-all duration-300 p-5 border bg-[#F4F1DE]/40 hover:bg-[#F4F1DE]/80 border-stone-200/80';
+            badge.className = 'w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold bg-stone-200 text-stone-700';
+            content.classList.add('hidden');
+          }
+        }
+      }
+
+      // 5. Interactive Mind Diagnosis Quiz
+      const quizQuestions = [
+        {
+          q: 'Q1. 요즘 일상에서 가장 자주 느끼는 마음 상태는 무엇인가요?',
+          options: [
+            { text: '지속적인 업무와 일상에 지쳐 번아웃이 왔다', prog: 'tea-meditation' },
+            { text: '가족, 직장 등 인간관계에서 말로 인한 피로와 오해가 잦다', prog: 'dialogue-salon' },
+            { text: '혼자 있는 시간이 길어 외롭고 누군가와의 따뜻한 연결이 그립다', prog: 'youth-dining' },
+            { text: '특별한 문제보단 나 자신을 깊이 탐색하고 쉬어갈 시간이 필요하다', prog: 'tea-meditation' }
+          ]
+        },
+        {
+          q: 'Q2. 내가 가장 바라는 힐링과 휴식의 방식은?',
+          options: [
+            { text: '조용히 차 한 잔 마시며 오감과 호흡에 집중하기', prog: 'tea-meditation' },
+            { text: '비난 없이 내 이야기를 귀 기울여 들어주는 사람들과 대화하기', prog: 'dialogue-salon' },
+            { text: '맛있고 건강한 음식을 함께 먹으며 가볍고 다정하게 교류하기', prog: 'youth-dining' }
+          ]
+        },
+        {
+          q: 'Q3. 모임에 참여할 때 가장 중요하게 생각하는 요소는?',
+          options: [
+            { text: '어떤 말을 해도 안전한 비밀 보장과 전문적인 조율', prog: 'dialogue-salon' },
+            { text: '편안하고 자연 친화적인 공간에서 누리는 깊은 이완', prog: 'tea-meditation' },
+            { text: '스펙이나 나이 묻지 않고 환대받는 편안한 분위기', prog: 'youth-dining' }
+          ]
+        }
+      ];
+      let quizStep = 0;
+      let quizAnswers = [];
+
+      function renderQuizStep() {
+        const qData = quizQuestions[quizStep];
+        document.getElementById('quizStepText').innerText = '질문 ' + (quizStep + 1) + ' / ' + quizQuestions.length;
+        const pct = Math.round(((quizStep + 1) / quizQuestions.length) * 100);
+        document.getElementById('quizPercentText').innerText = pct + '%';
+        document.getElementById('quizProgressBar').style.width = pct + '%';
+        document.getElementById('quizQuestionTitle').innerText = qData.q;
+
+        const container = document.getElementById('quizOptionsContainer');
+        container.innerHTML = '';
+        qData.options.forEach((opt) => {
+          const btn = document.createElement('button');
+          btn.className = 'w-full text-left p-4 rounded-2xl bg-white hover:bg-[#F4F1DE]/70 active:scale-99 border border-stone-200 hover:border-[#2D6A4F] text-stone-800 text-sm font-medium transition-all shadow-sm flex items-center justify-between group cursor-pointer';
+          btn.innerHTML = '<span>' + opt.text + '</span><span class="text-stone-400 group-hover:text-[#2D6A4F] group-hover:translate-x-1 transition-all shrink-0 ml-2">➔</span>';
+          btn.onclick = () => answerQuiz(opt.prog);
+          container.appendChild(btn);
+        });
+      }
+
+      function answerQuiz(progId) {
+        quizAnswers.push(progId);
+        if (quizStep + 1 < quizQuestions.length) {
+          quizStep++;
+          renderQuizStep();
+        } else {
+          showQuizResult();
+        }
+      }
+
+      function showQuizResult() {
+        const counts = {};
+        quizAnswers.forEach(id => { counts[id] = (counts[id] || 0) + 1; });
+        let winner = 'dialogue-salon';
+        let maxCount = 0;
+        Object.keys(counts).forEach(id => {
+          if (counts[id] > maxCount) {
+            maxCount = counts[id];
+            winner = id;
+          }
+        });
+        const program = PROGRAM_DATA[winner];
+
+        document.getElementById('quizQuestionBox').classList.add('hidden');
+        document.getElementById('quizResultBox').classList.remove('hidden');
+        document.getElementById('quizResultTitle').innerText = '[' + program.title + ']이 딱 맞아요!';
+        document.getElementById('quizResultDesc').innerText = program.shortDesc;
+        document.getElementById('quizBookBtn').setAttribute('onclick', "openBookingModal('" + winner + "')");
+      }
+
+      function resetQuiz() {
+        quizStep = 0;
+        quizAnswers = [];
+        document.getElementById('quizQuestionBox').classList.remove('hidden');
+        document.getElementById('quizResultBox').classList.add('hidden');
+        renderQuizStep();
+      }
+      renderQuizStep();
+
+      // 6. Review Filtering & Expand
+      function filterReviews(category) {
+        const cards = document.querySelectorAll('.review-card');
+        cards.forEach(card => {
+          if (category === 'all' || card.getAttribute('data-category') === category) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        const tabs = {
+          'all': 'revTabAll',
+          'youth': 'revTabYouth',
+          'parent': 'revTabParent',
+          'senior': 'revTabSenior'
+        };
+        Object.keys(tabs).forEach(cat => {
+          const btn = document.getElementById(tabs[cat]);
+          if (cat === category) {
+            btn.className = 'px-4 py-1.5 rounded-full text-xs font-semibold transition-all whitespace-nowrap bg-[#2D6A4F] text-white shadow-sm';
+          } else {
+            btn.className = 'px-4 py-1.5 rounded-full text-xs font-semibold transition-all whitespace-nowrap bg-white text-stone-600 hover:bg-stone-100 border border-stone-200';
+          }
+        });
+      }
+
+      function toggleReviewExpand(textId, btn) {
+        const el = document.getElementById(textId);
+        const span = btn.querySelector('span');
+        if (el.classList.contains('line-clamp-3')) {
+          el.classList.remove('line-clamp-3');
+          span.innerText = '간략히 접기';
+        } else {
+          el.classList.add('line-clamp-3');
+          span.innerText = '이야기 더보기';
+        }
+      }
+
+      // 7. FAQ Accordion Toggle
+      function toggleFaq(idx) {
+        const ans = document.getElementById('faqAnswer' + idx);
+        const arr = document.getElementById('faqArrow' + idx);
+        if (ans.classList.contains('hidden')) {
+          ans.classList.remove('hidden');
+          arr.innerText = '▲';
+          arr.className = 'text-[#2D6A4F] font-bold text-lg';
+        } else {
+          ans.classList.add('hidden');
+          arr.innerText = '▼';
+          arr.className = 'text-stone-400 font-bold text-lg';
+        }
+      }
+
+      // 8. Booking Modal Logic
+      let currentBookingCategory = '청년 1인 가구';
+
+      function selectBookingCategory(cat, btn) {
+        currentBookingCategory = cat;
+        document.querySelectorAll('.cat-btn').forEach(b => {
+          b.className = 'cat-btn py-2 px-2 rounded-xl text-xs font-medium border transition-colors bg-white text-stone-600 border-stone-200 hover:bg-stone-50';
+        });
+        btn.className = 'cat-btn py-2 px-2 rounded-xl text-xs font-medium border transition-colors bg-[#2D6A4F] text-white border-[#2D6A4F]';
+      }
+
+      function openBookingModal(progId) {
+        const modal = document.getElementById('bookingModal');
+        const form = document.getElementById('bookingForm');
+        const conf = document.getElementById('bookingConfirmation');
+        form.classList.remove('hidden');
+        conf.classList.add('hidden');
+        document.getElementById('bookingModalHeading').innerText = '쉼표 세션 예약 신청하기';
+        document.getElementById('bookingModalSub').innerText = '어떤 부담도 없이 차 한 잔과 함께 편안하게 찾아오세요.';
+
+        if (progId) {
+          document.getElementById('bookProgramSelect').value = progId;
+        }
+        modal.classList.remove('hidden');
+      }
+
+      function closeBookingModal() {
+        document.getElementById('bookingModal').classList.add('hidden');
+      }
+
+      function handleBookingSubmit(e) {
+        e.preventDefault();
+        const name = document.getElementById('bookName').value.trim();
+        const phone = document.getElementById('bookPhone').value.trim();
+        const progSelect = document.getElementById('bookProgramSelect');
+        const progText = progSelect.options[progSelect.selectedIndex].text;
+        const date = document.getElementById('bookDate').value;
+        const time = document.getElementById('bookTime').value;
+
+        if (!name || !phone) {
+          alert('이름과 연락처를 입력해 주세요.');
+          return;
+        }
+
+        const code = 'MIND-' + Math.floor(100000 + Math.random() * 900000);
+        document.getElementById('confNameTitle').innerText = name + ' 님의 마음 쉼표가 준비되었습니다.';
+        document.getElementById('confCode').innerText = code;
+        document.getElementById('confProgramName').innerText = progText;
+        document.getElementById('confDateTime').innerText = date + ' (' + time + ')';
+        document.getElementById('confPhone').innerText = phone + ' 로 발송 예정';
+
+        document.getElementById('bookingForm').classList.add('hidden');
+        document.getElementById('bookingConfirmation').classList.remove('hidden');
+        document.getElementById('bookingModalHeading').innerText = '예약이 완료되었습니다';
+        document.getElementById('bookingModalSub').innerText = '별이엄마가 따뜻한 찻물을 준비하고 기다리겠습니다.';
+      }
+
+      // 9. Program Curriculum Modal Logic
+      let currentActiveModalProg = null;
+
+      function openProgramModal(progId) {
+        const prog = PROGRAM_DATA[progId];
+        if (!prog) return;
+        currentActiveModalProg = progId;
+
+        document.getElementById('modalProgImg').src = prog.image;
+        document.getElementById('modalProgTag').innerText = prog.tag;
+        document.getElementById('modalProgTitle').innerText = prog.title;
+        document.getElementById('modalProgDesc').innerText = prog.shortDesc;
+        document.getElementById('modalProgSchedule').innerText = prog.schedule;
+        document.getElementById('modalProgDuration').innerText = prog.duration;
+        document.getElementById('modalProgCapacity').innerText = prog.capacity;
+        document.getElementById('modalProgTarget').innerText = prog.target;
+        document.getElementById('modalProgPrice').innerText = prog.price;
+        document.getElementById('modalProgBenefit').innerText = prog.benefit;
+
+        const currBox = document.getElementById('modalProgCurriculum');
+        currBox.innerHTML = '';
+        prog.curriculum.forEach(item => {
+          const div = document.createElement('div');
+          div.className = 'flex items-start gap-2.5 p-2.5 rounded-xl bg-stone-50 border border-stone-100 text-xs';
+          div.innerHTML = '<span class="font-bold text-[#2D6A4F] shrink-0 w-14">' + item.step + '</span><span class="text-stone-700 leading-relaxed">' + item.desc + '</span>';
+          currBox.appendChild(div);
+        });
+
+        document.getElementById('programModal').classList.remove('hidden');
+      }
+
+      function closeProgramModal() {
+        document.getElementById('programModal').classList.add('hidden');
+      }
+
+      function bookFromModal() {
+        closeProgramModal();
+        if (currentActiveModalProg) {
+          openBookingModal(currentActiveModalProg);
+        } else {
+          openBookingModal('welcome-trial');
+        }
+      }
+
+      // Close modal on escape key
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeBookingModal();
+          closeProgramModal();
+        }
+      });
+    </script>
+  </body>
+</html>
